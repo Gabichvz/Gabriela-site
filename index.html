@@ -3,38 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website with JavaScript</title>
+    <title>Alex Fisher Design Inspired Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default browser styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 20px 0;
             text-align: center;
         }
+
         nav {
             background-color: #444;
-            color: #fff;
-            padding: 10px;
+            padding: 10px 0;
             text-align: center;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 20px;
+            font-size: 18px;
         }
-        section {
+
+        .content {
             padding: 20px;
         }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 20px 0;
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -45,46 +64,41 @@
 <body>
 
     <header>
-        <h1>Heyyy</h1>
+        <h1>Alex Fisher Design Inspired Website</h1>
     </header>
 
     <nav>
-        <a href="#" onclick="showPage('home')">Home</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
     </nav>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>This is the home page of our website.</p>
-    </section>
+    <div class="content">
+        <div class="section">
+            <h2>Welcome</h2>
+            <p>This is a simple example of a website inspired by the design of Alex Fisher Design.</p>
+        </div>
 
-    <section id="about" style="display: none;">
-        <h2>About</h2>
-        <p>This is the about page of our website.</p>
-    </section>
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac velit quis nulla dapibus sodales.</p>
+        </div>
 
-    <section id="contact" style="display: none;">
-        <h2>Contact</h2>
-        <p>This is the contact page of our website.</p>
-    </section>
+        <div class="section">
+            <h2>Portfolio</h2>
+            <p>Check out our amazing projects!</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us!</p>
+        </div>
+    </div>
 
     <footer>
-        &copy; 2024 My Website. All rights reserved.
+        &copy; 2024 Alex Fisher Design Inspired Website. All rights reserved.
     </footer>
-
-    <script>
-        function showPage(pageId) {
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function(section) {
-                if (section.id === pageId) {
-                    section.style.display = 'block';
-                } else {
-                    section.style.display = 'none';
-                }
-            });
-        }
-    </script>
 
 </body>
 </html>
